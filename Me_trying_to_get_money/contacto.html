@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset = UTF-8">
+		<script type="text/javascript" src = "js/jquery.js"></script>
+		<script type="text/javascript">
+			$(document).ready(inicio)
+			function inicio(){
+				 $("select").change(cambiacss) 
+			}
+			function cambiacss(){
+				var plantilla = $("select").attr("value");
+				$("plantilla").html('<link rel="stylesheet" type="text/css" href="css/'+plantilla+'.css">')
+			}
+		</script>
+		<link rel="stylesheet" type="text/css" href="css/base.css">
+		<plantilla>
+		</plantilla>
+				
+	</head>
+	<body>
+		
+		<select name = "plantilla">
+			<option value="">Selecciona una plantilla</option>
+			<option value="pc1">Plantilla para PC</option>
+			<option value="pchd">Plantilla alta definicion</option>
+			<option value="movil">Plantilla movil</option>
+			<option value="tablet">Plantilla tablet</option>
+		</select>
+		<div id="contenedor">
+			<header>
+				<div id="titulo">
+					<div id = "logo">
+					</div>
+				
+				<h1> Cynthia Cervantes Perez</h1>
+				<h2> Slogan de la web</h2>
+				</div>
+				<nav>
+					<ul>
+						<li>
+							<a href="index.html">Inicio</a>
+						</li>
+						<li>
+							<a href="blog.html">Blog</a>
+						</li>
+						<li>
+							<a href="productos.html">Productos</a>
+						</li>
+						<li>
+							<a href="contacto.html">Contacto</a>
+						</li>
+					</ul>
+
+			</header>
+			<section>
+				<h3>Si desea ponerse en contacto conmigo, rellene esto:</h3>
+				<form method="POST" action="procesaformulario.php">
+					<div class="formleyenda">Nombre:</div>
+					<input type="text" name="Nombre">
+					<div class="formleyenda">Email:</div>
+					<input type="text" name="Email">
+					<div class="formleyenda">Mensaje:</div>
+					<textarea name="mensaje"></textarea>
+					<input type="submit" value="Enviar">
+					
+				</form>
+			</section>
+			<footer>
+				<h6>(c) 2021 Claudia Torres Pérez</h6>
+				
+			</footer>
+		</div>
+
+	</body>
+</html>>

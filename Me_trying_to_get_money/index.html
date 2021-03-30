@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http="Content-Type" content="text/html; charset = UTF-8">
+		<script type="text/javascript" src = "js/jquery.js"></script>
+		<script type="text/javascript">
+			$(document).ready(inicio)
+			function inicio(){
+				 $("select").change(cambiacss) 
+			}
+			function cambiacss(){
+				var plantilla = $("select").attr("value");
+				$("plantilla").html('<link rel="stylesheet" type="text/css" href="css/'+plantilla+'.css">')
+			}
+		</script>
+		<link rel="stylesheet" type="text/css" href="css/base.css">
+		<plantilla>
+		</plantilla>
+				
+	</head>
+	<body>
+
+		<select name = "plantilla">
+			<option value selected="">Selecciona una plantilla</option>
+			<option value selected="pc1">Plantilla para PC</option>
+			<option value selected="pchd">Plantilla alta definicion</option>
+			<option value selected="movil">Plantilla movil</option>
+			<option value selected="tablet">Plantilla tablet</option>
+		</select>
+		<div id="contenedor">
+			<header>
+				<div id="titulo">
+					<div id = "logo">
+					</div>
+				
+				<h1> Cynthia Cervantes Perez</h1>
+				<h2> Slogan de la web</h2>
+				</div>
+				<nav>
+					<ul>
+						<li>
+							<a href="index.html">Inicio</a>
+						</li>
+						<li>
+							<a href="blog.html">Blog</a>
+						</li>
+						<li>
+							<a href="productos.html">Productos</a>
+						</li>
+						<li>
+							<a href="contacto.html">Contacto</a>
+						</li>
+					</ul>
+
+			</header>
+			<section>
+				<div id="banner">
+					<h3>
+						Título del banner
+					</h3>
+					<p>Lorem ipsum es una expresión latina que se utiliza para hablar del texto que se utiliza en el diseño gráfico para comprobar la distribución de una plantilla, ver cómo queda una tipografía o simplemente estudiar un borrador de diseño para buscar una mejor redistribución de sus elementos.</p>
+					<div>
+						<article>
+						<div class="imagen destacado" id="img1">
+						</div>	
+							<h3>
+								Titulo del destacado
+							</h3>
+							<p>Lorem ipsum es una expresión latina que se utiliza para hablar del texto que se utiliza en el diseño gráfico para comprobar la distribución de una plantilla, ver cómo queda una tipografía o simplemente estudiar un borrador de diseño para buscar una mejor redistribución de sus elementos.</p>
+						</article>
+						<article>
+						<div class="imagen destacado" id="img1">
+						</div>
+							<h3>
+								Titulo del destacado
+							</h3>
+							<p>Lorem ipsum es una expresión latina que se utiliza para hablar del texto que se utiliza en el diseño gráfico para comprobar la distribución de una plantilla, ver cómo queda una tipografía o simplemente estudiar un borrador de diseño para buscar una mejor redistribución de sus elementos.</p>
+						</article>
+						<article>
+						<div class="imagen destacado" id="img1">
+						</div>
+							<h3>
+								Titulo del destacado
+							</h3>
+							<p>Lorem ipsum es una expresión latina que se utiliza para hablar del texto que se utiliza en el diseño gráfico para comprobar la distribución de una plantilla, ver cómo queda una tipografía o simplemente estudiar un borrador de diseño para buscar una mejor redistribución de sus elementos.</p>
+						</article>
+			</section>
+			<footer>
+				<h6>(c) 2021 Claudia Torres Pérez</h6>
+				
+			</footer>
+		</div>
+
+	</body>
+</html>
